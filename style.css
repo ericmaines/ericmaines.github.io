@@ -1,0 +1,190 @@
+/* CSS Document */
+
+h1{
+	color: Orange;
+}
+
+nav ul{
+	background-color:rebeccapurple;
+	border-style:solid;
+	border-color:lavender;
+	border-width:2px;
+	padding:0.5em;
+	border-radius:30px;
+	display:flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+nav ul li{
+	list-style-type:none;
+	margin-left:0.5em;
+	martin-right:0.5em;
+	color:skyblue;
+	text-align: center;
+	
+}
+
+nav ul li a{
+	text-decoration:none;
+	color:white;
+}
+
+body{
+	background-color:#7B68EE;
+	font-family: "Helvetica", sans-serif;
+	color: white;
+}
+
+ul{
+	color: white;
+	font-family: 'Times New Roman', 'serif';
+}
+
+figure{
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-left:0px;
+}
+
+.topDivider{
+	border-top-style:solid;
+	border-top-width: 2px;
+	border-top-color:white;
+	padding-bottom:10px;
+}
+
+.stylishbox{
+	background-color: rebeccapurple;
+	border-style:solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color:lavender;
+	padding-left:10px;
+}
+
+.tinyPic{
+	height:60px;
+	border-radius:10px;
+}
+
+.smallPicture{
+	width: 200px;
+}
+
+.mediumPic{
+	width: 400px;
+}
+
+.largePic{
+	width: 600px;
+}
+
+.card{
+	height:200px;
+	width: 200px;
+	border: 2px solid lime;
+	border-radius: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top:10px;
+	font-family: "Trebuchet MS", sans-serif;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.card:hover{
+	border-color: white;
+}
+
+.cardContainer{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+.sideNoteStyle{
+	border:dotted 3px purple;
+	background-color: #D168FF;
+	padding:0.5em;
+	margin:0.5em;
+}
+
+.attPageLayoutGrid{
+	display:grid;
+	grid-column-gap:0.5em;
+	grid-row-gap:1em;
+	grid-template-rows: auto;
+	grid-template-columns: 2fr 1fr;
+	grid-template-areas: 
+		"agArticle agAside1"
+		"agArticle agAside2"
+		"agArticle ."
+}
+
+.attGridArticle{
+	grid-area: agArticle;
+}
+
+.attGridAside1{
+	grid-area: agAside1;
+}
+
+.attGridAside2{
+	grid-area: agAside2;
+}
+#myCoolText{
+	color:lawngreen;
+	border:2px ridge #ffffff;
+	padding: 15px;
+	text-align: center;
+	animation-name:rainbowGlow;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+}
+
+#frontpage{
+	background: #7B68EE;
+	background: repeating-linear-gradient(#7B68EE, purple);
+}
+
+#mendeleevPic{
+	border:5px ridge brown;
+	width:15%;
+}
+
+@keyframes myFirstAnimation{
+	from {
+		width: 100px;
+	}
+	to{
+		width: 300px;
+	}
+}
+
+@keyframes rainbowGlow{
+	0%{
+		color: #FFD700;
+	}
+	50%{
+		color: #663399;
+	}
+	100%{
+		color: #FFD700;
+	}
+}
+
+@media all and (min-width:1000px){
+	nav ul{
+		flex-direction:row;
+		justify-content: space-around;
+	}
+}
+
+.linkText{
+	color: white;
+	margin-left: 10px;
+	text-decoration:none;
+}

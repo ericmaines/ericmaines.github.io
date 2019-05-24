@@ -29,49 +29,44 @@
   					</div>
 				</nav>
 	  	</header>
-
+		<br><br>
 	  	<div class="container"><h1>Contact Me</h1></div>
-	<div class="container">
-	  <div class="row">
-		  <div class="col-sm-10">
-			  email: <ul><li>ericmaines@ericmaines.com</li> 
-			  			 <li>eric.maines@uky.edu</li>
-			  		 </ul>
-			  <p>phone: (859)444-3998</p>
-		  </div>
-		  <div class="col-sm-2"><img src="Ukraine.jpg" alt="ukraine.jpg" class="img-fluid"></div>
-	  </div>
-		<div class="row">
-			<div class="col-sm-12">
-		<form action="https://postmail.invotes.com/send"
-    method="post" id="email_form">
-			<p> Email me directly here:<br> <br>
-    			<input class="col-sm-12" type="text" name="subject" placeholder="Subject" /> <br> <br>
-    			<textarea class="col-sm-12" name="text" placeholder="Message- please include your name and contact info"></textarea>
-    				<input type="hidden" name="access_token" value="8i2juhklyvyqvp16m1z9c4sv" />
-    				<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
-		    		<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />   <br> <br>
-    				<input id="submit_form" type="submit" value="Send" />
-				</p>
-				</form>
-			</div>
+		<div class="container">
+	  		<div class="row">
+		  		<div class="col-sm-10">
+			  		email: <ul><li>ericmaines@ericmaines.com</li> 
+			  			  	   <li>eric.maines@uky.edu</li>
+			  		 	   </ul>
+			   			   <p>phone: (859)444-3998</p>
+		  		</div>
+		  		<div class="col-sm-2"><img src="Ukraine.jpg" alt="ukraine.jpg" class="img-fluid"></div>
+	  			</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<form action="https://postmail.invotes.com/send"
+    						method="post" id="email_form">
+						<p> Email me directly here:<br> <br>
+    							<input class="col-sm-10" type="text" name="subject" placeholder="Subject" /> <br> <br>
+    							<textarea class="col-sm-10" name="text" placeholder="Message- please include your name and contact info"></textarea>
+    							<input type="hidden" name="access_token" value="8i2juhklyvyqvp16m1z9c4sv" />
+    							<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+			    				<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />   <br> <br>
+	    						<input id="submit_form" type="submit" value="Send" />
+							</p>
+						</form>
+					</div>
+				</div>
+			<script>
+    			var submitButton = document.getElementById("submit_form");
+    			var form = document.getElementById("email_form");
+    			form.addEventListener("submit", function (e) {
+        			setTimeout(function() {
+            			submitButton.value = "Sending...";
+            			submitButton.disabled = true;
+        			}, 1);
+    			});
+			</script> 
 		</div>
-     
-<!-- optional, prevents the submit button from being pressed more than once -->
-<script>
-    var submitButton = document.getElementById("submit_form");
-    var form = document.getElementById("email_form");
-    form.addEventListener("submit", function (e) {
-        setTimeout(function() {
-            submitButton.value = "Sending...";
-            submitButton.disabled = true;
-        }, 1);
-    });
-</script> 
-
-		</div>
-	</div>
-	  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
